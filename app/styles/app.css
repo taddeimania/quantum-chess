@@ -1,0 +1,37 @@
+
+.tile {
+    padding-top: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.tile span.white {
+    color: white;
+}
+
+.tile span.black {
+    color: black;
+}
+
+.tile.occupied:hover, .tile.selected, .tile.possible {
+    padding-top: 0px;
+    border: 4px solid red;
+}
+
+.tile.black {
+    background: #6e512b;
+}
+.tile.white {
+    background: #d2b48c;
+}
+.piece {
+    font-family: 'ChessMedium';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 52px;
+}
